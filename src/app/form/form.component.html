@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Details</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label>
+                    Salutation
+                    <select name="salutation">
+                        <option value="">--None--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Dr.">Dr.</option>
+                        <option value="Prof.">Prof.</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>First Name: 
+                    <input type="text" name="firstName" required>
+                </label>
+            </p>
+            <p>
+                <label>Last Name: 
+                    <input type="text" name="lastName" required>
+                </label>
+            </p>
+            <p>Gender:
+                <label>
+                    <input type="radio" name="gender" value="male" required> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required> Female
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                    <input type="email" name="email" required>
+                </label>
+            </p>
+            <p>
+                <label>Date of Birth:
+                    <input type="date" name="birthDate" required>
+                </label>
+            </p>
+            <p>
+                <label>Address:
+                    <textarea name="address" cols="30" rows="3" required></textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
